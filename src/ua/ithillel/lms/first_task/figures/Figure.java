@@ -1,4 +1,4 @@
-package ua.ithillel.lms.figures;
+package ua.ithillel.lms.first_task.figures;
 
 public interface Figure {
 
