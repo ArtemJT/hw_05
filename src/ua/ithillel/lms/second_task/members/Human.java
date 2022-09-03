@@ -1,5 +1,7 @@
 package ua.ithillel.lms.second_task.members;
 
+import ua.ithillel.lms.second_task.abstracts.Member;
+
 public class Human extends Member {
 
     public Human(String name) {

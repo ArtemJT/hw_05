@@ -1,5 +1,7 @@
 package ua.ithillel.lms.second_task.members;
 
+import ua.ithillel.lms.second_task.abstracts.Member;
+
 public class Cat extends Member {
 
     public Cat(String name) {
