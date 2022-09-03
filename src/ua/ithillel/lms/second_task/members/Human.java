@@ -7,11 +7,4 @@ public class Human extends Member {
         setLimitRun(0.3);
         setLimitJump(0.2);
     }
-
-    @Override
-    public String toString() {
-        return "Human{" +
-                "name='" + name + '\'' +
-                '}';
-    }
 }

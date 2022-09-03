@@ -1,15 +1,13 @@
 package ua.ithillel.lms.first_task.figures;
 
-public class Circle implements Figure {
-
-    private final double radius;
+public class Circle extends Figure {
 
     public Circle(double radius) {
-        this.radius = radius;
+        super(radius);
     }
 
     @Override
     public double area() {
-        return Math.PI * Math.pow(radius, 2);
+        return Math.PI * Math.pow(segment, 2);
     }
 }

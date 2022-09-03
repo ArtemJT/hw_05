@@ -14,6 +14,10 @@ public class Member implements Movable {
         return name;
     }
 
+    public double getLimitRun() {
+        return limitRun;
+    }
+
     public void setLimitRun(double limitRun) {
         this.limitRun = limitRun;
     }

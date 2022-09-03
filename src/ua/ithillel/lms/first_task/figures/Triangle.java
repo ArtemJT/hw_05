@@ -1,17 +1,16 @@
 package ua.ithillel.lms.first_task.figures;
 
-public class Triangle implements Figure {
+public class Triangle extends Figure {
 
-    private final double side;
     private final double height;
 
     public Triangle(double side, double height) {
-        this.side = side;
+        super(side);
         this.height = height;
     }
 
     @Override
     public double area() {
-        return (side * height) / 2;
+        return (segment * height) / 2;
     }
 }

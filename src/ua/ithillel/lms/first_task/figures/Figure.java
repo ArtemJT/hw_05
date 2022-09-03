@@ -1,6 +1,10 @@
 package ua.ithillel.lms.first_task.figures;
 
-public interface Figure {
+abstract class Figure implements Areable {
 
-    double area();
+    protected final double segment;
+
+    public Figure(double segment) {
+        this.segment = segment;
+    }
 }

@@ -2,7 +2,7 @@ package ua.ithillel.lms.second_task.obstacles;
 
 import ua.ithillel.lms.second_task.members.Member;
 
-public class Obstacle {
+public class Obstacle implements Overcomable {
 
     protected String name;
     private final double distance;
