@@ -26,8 +26,13 @@ public abstract class Member implements Movable {
 
     @Override
     public void jump() {
+        isRun = false;
         System.out.print(name + " ");
         Movable.super.jump();
+    }
+
+    public boolean isRun() {
+        return isRun;
     }
 
     public double getLimitRun() {
@@ -44,9 +49,5 @@ public abstract class Member implements Movable {
 
     public void setLimitJump(double limitJump) {
         this.limitJump = limitJump;
-    }
-
-    public boolean isRun() {
-        return isRun;
     }
 }

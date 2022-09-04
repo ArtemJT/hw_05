@@ -18,7 +18,6 @@ public class Main {
                 new Treadmill(Math.random()),
                 new Wall(Math.random()), new Wall(Math.random()),
                 new Treadmill(Math.random()), new Treadmill(Math.random())};
-
         members = new Member[]{new Human("NICK"), new Cat("CAT"), new Robot("BOT")};
 
         passingObstacles();
