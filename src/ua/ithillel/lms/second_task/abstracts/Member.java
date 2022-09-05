@@ -8,6 +8,7 @@ public abstract class Member implements Movable {
     private double limitRun;
     private double limitJump;
     private boolean isRun;
+    private boolean isJump;
 
     protected Member(String name) {
         this.name = name;
@@ -19,12 +20,14 @@ public abstract class Member implements Movable {
 
     @Override
     public void run() {
+        isRun = true;
         System.out.print(name + " ");
         Movable.super.run();
     }
 
     @Override
     public void jump() {
+        isJump = true;
         System.out.print(name + " ");
         Movable.super.jump();
     }
@@ -33,8 +36,8 @@ public abstract class Member implements Movable {
         return isRun;
     }
 
-    public void setRun(boolean run) {
-        isRun = run;
+    public boolean isJump() {
+        return isJump;
     }
 
     public double getLimitRun() {

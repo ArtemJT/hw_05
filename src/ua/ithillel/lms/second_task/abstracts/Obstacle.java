@@ -16,7 +16,9 @@ public abstract class Obstacle implements Overcomable {
     @Override
     public boolean overcome(Member member) {
         memberName = member.getName();
-        memberLimit = member.isRun() ? member.getLimitRun() : member.getLimitJump();
+        if (member.isRun()) memberLimit = member.getLimitRun();
+        if (member.isJump()) memberLimit = member.getLimitJump();
+
         if (memberLimit >= distance) {
             printPassed();
             return false;
