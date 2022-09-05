@@ -1,6 +1,6 @@
 package ua.ithillel.lms.second_task.abstracts;
 
-import ua.ithillel.lms.second_task.services.Movable;
+import ua.ithillel.lms.second_task.interfaces.Movable;
 
 public abstract class Member implements Movable {
 
@@ -19,20 +19,22 @@ public abstract class Member implements Movable {
 
     @Override
     public void run() {
-        isRun = true;
         System.out.print(name + " ");
         Movable.super.run();
     }
 
     @Override
     public void jump() {
-        isRun = false;
         System.out.print(name + " ");
         Movable.super.jump();
     }
 
     public boolean isRun() {
         return isRun;
+    }
+
+    public void setRun(boolean run) {
+        isRun = run;
     }
 
     public double getLimitRun() {

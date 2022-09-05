@@ -1,4 +1,4 @@
-package ua.ithillel.lms.second_task.services;
+package ua.ithillel.lms.second_task.interfaces;
 
 public interface Movable {
 

@@ -10,7 +10,7 @@ public class Triangle extends Figure {
     }
 
     @Override
-    public double area() {
+    public double countSquare() {
         return (segment * height) / 2;
     }
 }

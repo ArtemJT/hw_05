@@ -7,7 +7,7 @@ public class Circle extends Figure {
     }
 
     @Override
-    public double area() {
+    public double countSquare() {
         return Math.PI * Math.pow(segment, 2);
     }
 }

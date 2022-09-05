@@ -8,7 +8,7 @@ public class Square extends Figure {
     }
 
     @Override
-    public double area() {
+    public double countSquare() {
         return segment * segment;
     }
 }

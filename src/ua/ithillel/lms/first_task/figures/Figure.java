@@ -1,6 +1,6 @@
 package ua.ithillel.lms.first_task.figures;
 
-abstract class Figure implements Areable {
+abstract class Figure implements Squareable {
 
     protected final double segment;
 

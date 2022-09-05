@@ -1,6 +1,6 @@
 package ua.ithillel.lms.second_task.abstracts;
 
-import ua.ithillel.lms.second_task.services.Overcomable;
+import ua.ithillel.lms.second_task.interfaces.Overcomable;
 
 public abstract class Obstacle implements Overcomable {
 
