@@ -1,10 +1,10 @@
 package ua.ithillel.lms.second_task;
 
-import ua.ithillel.lms.second_task.abstracts.Member;
-import ua.ithillel.lms.second_task.abstracts.Obstacle;
 import ua.ithillel.lms.second_task.members.Cat;
 import ua.ithillel.lms.second_task.members.Human;
+import ua.ithillel.lms.second_task.members.Member;
 import ua.ithillel.lms.second_task.members.Robot;
+import ua.ithillel.lms.second_task.obstacles.Obstacle;
 import ua.ithillel.lms.second_task.obstacles.Treadmill;
 import ua.ithillel.lms.second_task.obstacles.Wall;
 

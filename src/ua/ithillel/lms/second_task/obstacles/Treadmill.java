@@ -1,7 +1,6 @@
 package ua.ithillel.lms.second_task.obstacles;
 
-import ua.ithillel.lms.second_task.abstracts.Member;
-import ua.ithillel.lms.second_task.abstracts.Obstacle;
+import ua.ithillel.lms.second_task.members.Member;
 
 public class Treadmill extends Obstacle {
 

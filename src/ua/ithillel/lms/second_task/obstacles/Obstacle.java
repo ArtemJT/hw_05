@@ -1,8 +1,9 @@
-package ua.ithillel.lms.second_task.abstracts;
+package ua.ithillel.lms.second_task.obstacles;
 
 import ua.ithillel.lms.second_task.interfaces.Overcomable;
+import ua.ithillel.lms.second_task.members.Member;
 
-public abstract class Obstacle implements Overcomable {
+public class Obstacle implements Overcomable {
 
     private String name;
     private final double distance;
@@ -16,9 +17,7 @@ public abstract class Obstacle implements Overcomable {
     @Override
     public boolean overcome(Member member) {
         memberName = member.getName();
-        if (member.isRun()) memberLimit = member.getLimitRun();
-        if (member.isJump()) memberLimit = member.getLimitJump();
-
+        memberLimit = member.getLimit();
         if (memberLimit >= distance) {
             printPassed();
             return false;

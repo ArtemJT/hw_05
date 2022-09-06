@@ -1,12 +1,20 @@
 package ua.ithillel.lms.second_task.members;
 
-import ua.ithillel.lms.second_task.abstracts.Member;
-
 public class Human extends Member {
 
     public Human(String name) {
         super(name);
-        setLimitRun(0.3);
-        setLimitJump(0.2);
+    }
+
+    @Override
+    public void run() {
+        super.run();
+        setLimit(0.3);
+    }
+
+    @Override
+    public void jump() {
+        super.jump();
+        setLimit(0.2);
     }
 }
